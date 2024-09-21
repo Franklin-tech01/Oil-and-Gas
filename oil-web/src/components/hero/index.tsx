@@ -13,21 +13,18 @@ const Hero = () => {
                     backgroundPosition: "center", // Ensures the image is centered
                     backgroundAttachment: "scroll", // Keep it scrollable or use 'fixed' if you want it to stay while scrolling
                 }}
-                className='border-red-500 shadow-lg overflow-hidden flex flex-col items-start px-[80px] xl:px-[300px] w-full max-w-[1920px] h-[303px] lg:h-[668px] xl:h-[668px]'
+                className='border-red-500 shadow-lg overflow-hidden flex flex-col items-start px-[80px] xl:px-[300px] w-full max-w-[1920px] h-[353px] lg:h-[668px] xl:h-[668px]'
             >
-                <h2 className='text-[32px] lg:text-[80px] font-medium leading-[29px] mt-[87.5px] lg:mt-[216px] font-unbounded text-white text-start'>
-                    Meeting future
-                    <span className='block lg:mt-[40px]'> demand in a </span>
+                <h2 className='text-[28px] lg:text-[72px] font-semibold mt-[80px] lg:mt-[180px] font-unbounded text-white text-left leading-tight lg:leading-[1.2]'>
+                    Unlocking Efficient Energy Solutions <br className="hidden lg:block" /> with Hen & Associates
                 </h2>
-                <h3 className='text-[32px] lg:text-[80px] leading-[20px] lg:mt-[40px] text-white text-center lg:mb-[62px] mb-[32px]'>
-                    sustainable way
-                </h3>
+
                 <Button
                     hidden='hidden'
                     link='/involved'
                     text='Get Involved'
                     fontType='font-unbounded'
-                    className='!border-0 bg-black text-white hover:!text-black'
+                    className='!border-0 bg-black text-white rounded-full w-[150px] my-1 hover:!text-black'
                     textColor={'text-primary'}
                     hoverBG='hover:bg-[#fff]'
                 />
