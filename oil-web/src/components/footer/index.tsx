@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className='flex flex-col lg:flex-row justify-between px-6 py-12 bg-black text-white'>
             {/* Navigation Links */}
-            <div className='mb-8 lg:mb-0'>
+            {/* <div className='mb-8 lg:mb-0'>
                 <h3 className='text-[24px] font-semibold mb-4'>Quick Links</h3>
                 <ul className='space-y-2'>
                     <li><a href="#home" className='hover:text-gray-400 transition-colors'>Home</a></li>
@@ -16,7 +16,7 @@ const Footer = () => {
                     <li><a href="#contact" className='hover:text-gray-400 transition-colors'>Contact Us</a></li>
                     <li><a href="#clients" className='hover:text-gray-400 transition-colors'>Our Growing Clients</a></li>
                 </ul>
-            </div>
+            </div> */}
 
             {/* Company Information */}
             <div className='mb-8 lg:mb-0'>
