@@ -146,15 +146,36 @@
 "use client";
 import { Link } from 'react-scroll';
 import Image from 'next/image';
-import React, { useState } from 'react';
-import ButtonDark from './ButtonDark';
+import React, { useState, useEffect } from 'react';
+// import Button from '@/components/global/Button';
 
 const Nav = () => {
     const [navBarOpen, setNavBarOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setIsScrolled(true); // Set blur if scrolled past 50px
+            } else {
+                setIsScrolled(false); // Remove blur when at the top
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Clean up event listener when component unmounts
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
     return (
         <div className='px-[32px] bg-transparent absolute top-0 w-full z-20'>
             <nav>
-                <div className='flex justify-between items-center py-[12px]'>
+                {/* <div className=' fixed top-0 left-0 w-full z-20 flex justify-between items-center p-[12px]'> */}
+                <div className={`fixed top-0 left-0 w-full z-20 flex justify-between items-center p-[12px] transition-all duration-300 ${isScrolled ? 'backdrop-blur-md bg-white/30' : 'bg-transparent'}`}>
                     <a href='/' className='items-center cursor-pointer flex flex-col'>
                         <Image
                             className='w-[57.33px] h-[53.9px]'
@@ -176,22 +197,23 @@ const Nav = () => {
                     </button>
 
                     <div className='hidden md:flex gap-[16px]'>
-                        <Link to="hero" smooth={true} duration={500} className='p-[8px] text-white text-[16px] cursor-pointer hover:underline'>Home</Link>
-                        <Link to="aboutUs" smooth={true} duration={500} className='p-[8px] text-white text-[16px] cursor-pointer hover:underline'>About Us</Link>
-                        <Link to="solution" smooth={true} duration={500} className='p-[8px] text-white text-[16px] cursor-pointer hover:underline'>Our Values</Link>
-                        <Link to="parallax" smooth={true} duration={500} className='p-[8px] text-white text-[16px] cursor-pointer hover:underline'>Vision</Link>
-                        <Link to="getTogether" smooth={true} duration={500} className='p-[8px] text-white text-[16px] cursor-pointer hover:underline'>Mission</Link>
-                        <Link to="projects" smooth={true} duration={500} className='p-[8px] text-white text-[16px] cursor-pointer hover:underline'>Our Growing Client</Link>
-                        <Link to="footer" smooth={true} duration={500} className='p-[8px] text-white text-[16px] cursor-pointer hover:underline'>Contact Us</Link>
-                        <ButtonDark text={'Get Involved'} hidden='hidden' fontType={'font-unbounded'} link='/involved' />
+                        <Link to="hero" smooth={true} duration={500} className='p-[8px] text-black text-[16px] cursor-pointer hover:underline'>Home</Link>
+                        <Link to="aboutUs" smooth={true} duration={500} className='p-[8px] text-black text-[16px] cursor-pointer hover:underline'>About Us</Link>
+                        <Link to="solution" smooth={true} duration={500} className='p-[8px] text-black text-[16px] cursor-pointer hover:underline'>Our Values</Link>
+                        <Link to="parallax" smooth={true} duration={500} className='p-[8px] text-black text-[16px] cursor-pointer hover:underline'>Vision</Link>
+                        <Link to="getTogether" smooth={true} duration={500} className='p-[8px] text-black text-[16px] cursor-pointer hover:underline'>Mission</Link>
+                        <Link to="projects" smooth={true} duration={500} className='p-[8px] text-black text-[16px] cursor-pointer hover:underline'>Our Growing Client</Link>
+                        <Link to="footer" smooth={true} duration={500} className='p-[8px] text-black text-[16px] cursor-pointer hover:underline'>Contact Us</Link>
+                        {/* <Button text={'Get Involved'} hidden='hidden' fontType={'font-unbounded'} className='!text-black border border-black' link='/involved' /> */}
+                        <button className='w-28 p-2 border border-black text-black h-[52px]'>Get Involved</button>
                     </div>
                 </div>
             </nav>
 
             {/* Mobile Navigation */}
             {navBarOpen && (
-                <nav className='fixed z-20 top-0 left-0 w-[300px] bg-white flex flex-col'>
-                    <div className='flex items-center justify-between mx-[32px]'>
+                <nav className='fixed z-20 top-0 left-0 w-[300px] h-[100vh] bg-white flex flex-col'>
+                    <div className=' flex items-center justify-between mx-[32px]'>
                         <a href='/' className='mt-[24px] cursor-pointer flex flex-col'>
                             <Image
                                 className='w-[57.33px] h-[53.9px]'

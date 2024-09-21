@@ -23,9 +23,9 @@ const GetTogether = () => {
                             Experience The Creativity And Togetherness
                         </span>
                     </h2>
-                    <h3 className='text-white mt-2 lg:mt-4 text-[12px] md:text-[16px] lg:text-[24px] leading-[20px]'>
+                    {/* <h3 className='text-white mt-2 lg:mt-4 text-[12px] md:text-[16px] lg:text-[24px] leading-[20px]'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                    </h3>
+                    </h3> */}
 
                     {/* Button */}
                     <Button

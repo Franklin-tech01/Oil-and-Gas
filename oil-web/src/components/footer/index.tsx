@@ -23,7 +23,7 @@ const Footer = () => {
                 <h3 className='text-[24px] font-semibold mb-4'>Contact Information</h3>
                 <div className='space-y-2'>
                     <img src="/assets/icons/logo.svg" alt="Company Logo" className='mb-4 h-[60px] w-[160px] object-contain' />
-                    <p>UK: 5, Price of Wales Terrace, London W8 5PG</p>
+                    <p>UK: 5, Prince of Wales Terrace, London W8 5PG</p>
                     <p>USA: 18531 Greenwood Meadow Trail, Richmond, Texas 77407</p>
                     <p>Nigeria: 44, Ofada Street, Lagos State, Nigeria</p>
                     <p>Email: <a href="mailto:info@henassociate.com" className='text-primary hover:underline'>info@henassociate.com</a></p>

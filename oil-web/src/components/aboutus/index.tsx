@@ -3,11 +3,11 @@ import Button from '@/components/global/Button';
 
 const AboutUs = () => {
   return (
-    <section className='borde p-[40px] flex items-center flex-col '>
+    <section className='borde p-[40px] bg-[#cfbc0a] flex items-center flex-col '>
       {/* <div className='font-bold'>Trusted by 30,000 world-class brands and organizations of all sizes
       </div> */}
 
-      <div className='bg-grey-500 p-[20px] flex flex-col lg:flex-row justify-between rounded'>
+      <div className=' p-[20px] flex flex-col lg:flex-row justify-between rounded'>
         <div className='lg:w-[500px] mr-5'>
           <p className='font-bold text-[30px]'>About <span className='text-blue-500'>Us</span></p>
           {/* <p>Providing affordable and reliable energy</p> */}
