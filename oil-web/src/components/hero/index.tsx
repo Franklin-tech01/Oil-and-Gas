@@ -10,7 +10,7 @@ const Hero = () => {
                 <h2 className=' border-blue-500 text-[24px] lg:text-[80px] font-medium leading-[29px] mt-[87.5px] lg:mt-[216px] font-unbounded text-white text-start borde '>Meeting future
                     <span className='block lg:mt-[40px]'> demand in a </span></h2>
                 <h3 className=' border-blue-500 text-[24px] lg:text-[80px] leading-[20px] mt-[px] lg:mt-[40px]  text-white text-center lg:mb-[62px] mb-[32px]'>sustainable way</h3>
-                <Button hidden='hidden' link='/involved' text='Get Involved' fontType='font-unbounded' bg={'bg-white'} textColor={'text-primary'} hoverBG='hover:bg-[#D0E7E9]' />
+                <Button hidden='hidden' link='/involved' text='Get Involved' fontType='font-unbounded' className='!border-0 bg-black hover:!text-black ' textColor={'text-primary'} hoverBG='hover:bg-[#fff]' />
             </div>
 
         </section>

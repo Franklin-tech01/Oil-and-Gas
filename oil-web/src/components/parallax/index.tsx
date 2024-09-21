@@ -2,14 +2,14 @@ import React from 'react';
 
 const Parallax = () => {
     return (
-        <section className='px-[20px]'>
+        <section className='px-[20px] py-2'>
             {/* <p>Preserve and conserve</p> */}
             {/* <p className='text-[24px]'>A Vital Energy Resource For A Better Tomorrow</p> */}
             {/* <p className='text-[12px]'>Cubilia scelerisque ultricies at cras tempus phasellus primis habitant. Penatibus pulvinar at vel cursus dignissim sem condimentum molestie. Lobortis hac aenean posuere justo letius laoreet augue.</p> */}
             {/* <Button text='DISCOVER MORE' /> */}
-            <div className='flex'>
+            <div className='flex my-2'>
                 {/* <img src="arrow" alt="" /> */}
-                <div className='flex flex-col'>
+                <div className='flex flex-col gap-3'>
                     <p className='font-bold text-[24px]'>Our Value</p>
                     <p className='text-[12px] text-justify'>In performing our functions as a group, we will:
                         • Comply with applicable laws and regulations of any country where we maintain
@@ -29,17 +29,17 @@ const Parallax = () => {
                         following lines of product:</p>
                 </div>
             </div>
-            <div className='flex'>
+            <div className='flex my-2'>
                 {/* <img src="arrow" alt="" /> */}
-                <div className='flex flex-col'>
+                <div className='flex flex-col gap-3'>
                     <p className='font-bold text-[24px]'>Vision</p>
                     <p className='text-[12px] text-justify' >To be recognized globally as a leader in Oil and Gas infrastructure development,
                         improving quality of life and sustaining economic growth</p>
                 </div>
             </div>
-            <div className='flex'>
+            <div className='flex my-2'>
                 {/* <img src="arrow" alt="" /> */}
-                <div className='flex flex-col'>
+                <div className='flex flex-col gap-3'>
                     <p className='font-bold text-[24px]'>Mission</p>
                     <p className='text-[12px] text-justify'>To deploy our innovative products and services in the most environmentally friendly way,
                         fulfilling our role in the international effort to reduce wastage and increase savings.

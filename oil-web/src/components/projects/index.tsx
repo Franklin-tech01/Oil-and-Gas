@@ -4,7 +4,7 @@ const Projects = () => {
     return (
         <section className='mt-[24px] p-[24px]'>
             <p className='text-[24px] font-bold'>Procurement Services</p>
-            <p className='text-justify '>We have the resources and capabilities to source all items/services required to deliver clients
+            <p className=' '>We have the resources and capabilities to source all items/services required to deliver clients
                 project requirements. We have exclusive partnerships with major EOMs in the oil and gas
                 sector.
                 With track record of several successful project materials delivery for our clients. Hen &
@@ -73,26 +73,40 @@ const Projects = () => {
             <p className='text-justify mt-[20px] '>With offices around the globe, our international procurement team is comprised of well qualified officers with many years of experience to provide timely and cost-effective solutions
                 to our clients&apos; procurements.</p>
 
-            <div className='flex flex-col borde border-green-500'>
-                <p className='font-bold text-[24px]'>Our Clients:</p>
-                <div className=' flex gap-[4px] justify-between borde border-orange-500'>
+            <div className='flex flex-col '>
+                <p className='font-bold text-[24px]'>Our Clients</p>
+                <div className=' flex flex-col lg:flex-row  justify-around gap-[4px] '>
+                    <div className='flex  gap-2'>
+                        <div className='flex-col  items-center border-[2px] w-[200px] rounded'>
+                            <img src="/assets/images/1.jpg" className='h-[200px] w-[200px]' alt="" />
+                            <p className=' text-center p-[4px] font-bold text-[14px]' >Future OilField Service Limited
+                            </p>
+                        </div>
+                        <div className='flex-col items-center border-[2px] w-[200px] rounded'>
+                            <img src="/assets/images/2.jpg" className='h-[200px] w-[200px]' alt="" />
+                            <p className=' p-[4px] text-center font-bold text-[14px]'>Total Energies
+                            </p>
+                        </div>
+                    </div>
+                    <div className='flex gap-2' >
+                        <div className='flex-col  items-center border-[2px] w-[200px] rounded'>
+                            <img src="/assets/images/3.jpg" className='h-[200px] w-[200px]' alt="" />
+                            <p className=' text-center p-[4px] font-bold text-[14px]' >RusselSmith
+                            </p>
+                        </div>
+                        <div className='flex-col items-center border-[2px]  w-[200px]rounded'>
+                            <img src="/assets/images/4.jpg" className='h-[200px] w-[200px]' alt="" />
+                            <p className=' p-[4px] text-center font-bold text-[14px]'>Dorman Long
+                            </p>
+                        </div>
+                    </div>
 
-                    <div className='flex-col  items-center border-[2px] rounded'>
-                        <img src="/assets/images/1.jpg" className='h-[200px] w-[200px]' alt="" />
-                        <p className=' text-center p-[4px] font-bold text-[14px]' >Future OilField Service Limited
-                        </p>
-                    </div>
-                    <div className='flex-col items-center border-[2px] rounded'>
-                        <img src="/assets/images/2.jpg" className='h-[200px] w-[200px]' alt="" />
-                        <p className=' p-[4px] text-center font-bold text-[14px]'>Total Energies
-                        </p>
-                    </div>
                 </div>
             </div>
-            <div className='flex flex-col borde border-green-500'>
-                <div className=' flex gap-[4px] justify-between borde border-orange-500'>
+            <div className='flex flex-col'>
+                <div className=' flex gap-[4px] justify-between '>
 
-                    <div className='flex-col  items-center border-[2px] rounded'>
+                    {/* <div className='flex-col  items-center border-[2px] rounded'>
                         <img src="/assets/images/3.jpg" className='h-[200px] w-[200px]' alt="" />
                         <p className=' text-center p-[4px] font-bold text-[14px]' >RusselSmith
                         </p>
@@ -101,7 +115,7 @@ const Projects = () => {
                         <img src="/assets/images/4.jpg" className='h-[200px] w-[200px]' alt="" />
                         <p className=' p-[4px] text-center font-bold text-[14px]'>Dorman Long
                         </p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

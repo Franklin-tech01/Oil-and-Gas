@@ -1,11 +1,11 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from 'next/image';
+import React from 'react';
 
 interface MapButton {
     width?: string;
     text: string;
     size?: string;
-    weight?: string
+    weight?: string;
     fontType?: string;
     hidden?: string;
     margin?: string;
@@ -13,11 +13,11 @@ interface MapButton {
     bg?: string;
     textColor?: string;
     hoverBG?: string;
-
+    className?: string;
 }
-const Button: React.FC<MapButton> = ({ width, text, size, weight, fontType, hidden, margin, link, bg, textColor, hoverBG }) => {
+const Button: React.FC<MapButton> = ({ width, text, size, weight, fontType, hidden, margin, link, bg, textColor, hoverBG, className }) => {
     return (
-        <a href={link} className={`flex  gap-[8px] rounded-[4px] ${margin}  justify-center px-[16px] py-[16px] ${bg || 'bg-primary'} ${hoverBG || 'hover:bg-[#D0E7E9]'} hover:border-primary  transition-colors cursor-pointer border-2 border-primary hover:text-white  ${width} h-fit`}>
+        <a href={link} className={`flex  gap-[8px] rounded-[4px] ${margin}  justify-center px-[16px] py-[16px] ${bg || 'bg-primary'} ${hoverBG || 'hover:bg-[#D0E7E9]'} hover:border-primary  transition-colors cursor-pointer border-2 border-primary hover:text-white  ${width} h-fit ${className}`}>
             <h1 className={`${size} ${weight} h-fit  leading-[20px] ${textColor || 'text-white'}  ${fontType}`}>{text}</h1>
             <Image
                 src={'/assets/icons/chevron-right.svg'}
@@ -27,8 +27,8 @@ const Button: React.FC<MapButton> = ({ width, text, size, weight, fontType, hidd
                 className={`${hidden}`}
             />
         </a>
-    )
-}
+    );
+};
 
 export default Button;
 

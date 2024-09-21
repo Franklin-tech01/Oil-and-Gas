@@ -26,7 +26,7 @@ const AboutUs = () => {
         {/* <p>Providing affordable and reliable energy</p> */}
 
 
-        <p className='text-justify'>Our company showcases
+        <p className='text-start'>Our company showcases
           the comprehensive
           services we offer in the
           realm of strategic oil and
