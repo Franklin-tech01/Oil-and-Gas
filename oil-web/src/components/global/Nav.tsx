@@ -184,7 +184,7 @@ const Nav = () => {
                             width={57.33}
                             height={53.9}
                         />
-                        <p className='text-white text-[8px] lg:text-[14px]'>Hen and Associate</p>
+                        <p className='text-white text-[8px] lg:text-[14px]'>Hen & Associate</p>
                     </a>
                     <button onClick={() => setNavBarOpen(!navBarOpen)}>
                         <Image
