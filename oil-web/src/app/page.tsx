@@ -15,17 +15,32 @@ export async function generateMetadata() {
   };
 }
 
+// export default function Home() {
+//   return (
+//     <section className="border  relative flex flex-col ">
+//       <Nav />
+//       <Hero />
+//       <AboutUs />
+//       <Solution />
+//       <Parallax />
+//       <GetTogether />
+//       <Projects />
+//       <Footer />
+//     </section>
+//   );
+// }
+
 export default function Home() {
   return (
-    <section className="border  relative flex flex-col ">
+    <section className="border relative flex flex-col">
       <Nav />
-      <Hero />
-      <AboutUs />
-      <Solution />
-      <Parallax />
-      <GetTogether />
-      <Projects />
-      <Footer />
+      <div id="hero"><Hero /></div>
+      <div id="aboutUs"><AboutUs /></div>
+      <div id="solution"><Solution /></div>
+      <div id="parallax"><Parallax /></div>
+      <div id="getTogether"><GetTogether /></div>
+      <div id="projects"><Projects /></div>
+      <div id="footer"><Footer /></div>
     </section>
   );
 }
