@@ -3,7 +3,7 @@ import Button from '@/components/global/Button';
 
 const AboutUs = () => {
   return (
-    <section className='borde p-[40px] flex items-center flex-col border-green-500'>
+    <section className='borde p-[40px] flex items-center flex-col '>
       {/* <div className='font-bold'>Trusted by 30,000 world-class brands and organizations of all sizes
       </div> */}
 

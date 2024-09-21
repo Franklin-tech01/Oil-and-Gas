@@ -15,11 +15,11 @@ const Hero = () => {
                 }}
                 className='border-red-500 shadow-lg overflow-hidden flex flex-col items-start px-[80px] xl:px-[300px] w-full max-w-[1920px] h-[303px] lg:h-[668px] xl:h-[668px]'
             >
-                <h2 className='text-[24px] lg:text-[80px] font-medium leading-[29px] mt-[87.5px] lg:mt-[216px] font-unbounded text-white text-start'>
+                <h2 className='text-[32px] lg:text-[80px] font-medium leading-[29px] mt-[87.5px] lg:mt-[216px] font-unbounded text-white text-start'>
                     Meeting future
                     <span className='block lg:mt-[40px]'> demand in a </span>
                 </h2>
-                <h3 className='text-[24px] lg:text-[80px] leading-[20px] lg:mt-[40px] text-white text-center lg:mb-[62px] mb-[32px]'>
+                <h3 className='text-[32px] lg:text-[80px] leading-[20px] lg:mt-[40px] text-white text-center lg:mb-[62px] mb-[32px]'>
                     sustainable way
                 </h3>
                 <Button

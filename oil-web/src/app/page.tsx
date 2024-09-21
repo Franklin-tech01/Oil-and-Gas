@@ -8,7 +8,7 @@ import Projects from "@/components/projects";
 import GetTogether from "@/components/together";
 export default function Home() {
   return (
-    <section className="border  relative flex flex-col  border-green-500">
+    <section className="border  relative flex flex-col ">
       <Nav />
       <Hero />
       <AboutUs />
