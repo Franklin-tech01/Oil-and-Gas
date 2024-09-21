@@ -52,7 +52,7 @@ const GetTogether = () => {
                         link='/involved'
                         text='JOB OPPORTUNITY'
                         fontType='font-unbounded'
-                        className='bg-black text-white mt-4 lg:mt-6 hover:!text-black hover:bg-white hover:!border-black transition-all duration-300'
+                        className='bg-black text-white mt-4 lg:mt-6  transition-all duration-300'
                     />
                 </div>
             </div>
