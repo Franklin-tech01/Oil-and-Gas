@@ -18,13 +18,12 @@ const Hero = () => {
                 <h2 className='text-[28px] lg:text-[72px] font-semibold mt-[80px] lg:mt-[180px] font-unbounded text-white text-left leading-tight lg:leading-[1.2]'>
                     Unlocking Efficient Energy Solutions <br className="hidden lg:block" /> with Hen & Associates
                 </h2>
-
                 <Button
                     hidden='hidden'
                     link='/involved'
                     text='Get Involved'
                     fontType='font-unbounded'
-                    className='!border-0 bg-black text-white rounded-full w-[150px] my-1 hover:!text-black'
+                    className='!border-0 bg-black text-white rounded-full w-[145px] my-2 hover:!text-black'
                     textColor={'text-primary'}
                     hoverBG='hover:bg-[#fff]'
                 />
