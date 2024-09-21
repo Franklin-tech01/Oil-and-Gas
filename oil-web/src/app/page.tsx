@@ -6,6 +6,15 @@ import Solution from "@/components/solution";
 import Parallax from "@/components/parallax";
 import Projects from "@/components/projects";
 import GetTogether from "@/components/together";
+
+
+export async function generateMetadata() {
+  return {
+    title: 'Hen & Associates - Leading Oil & Gas Procurement and Innovative Solutions',
+    description: 'Hen & Associates provides world-class procurement services and project solutions across the oil and gas sector. With a proven track record and partnerships with leading OEMs globally, we deliver high-quality equipment and materials to meet our clients\' needs. Explore our commitment to excellence, innovative solutions, and the vision driving our success.',
+  };
+}
+
 export default function Home() {
   return (
     <section className="border  relative flex flex-col ">
