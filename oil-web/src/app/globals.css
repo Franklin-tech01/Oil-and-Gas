@@ -27,3 +27,29 @@ body {
 		text-wrap: balance;
 	}
 }
+
+.typewriter {
+	overflow: hidden; /* Ensures the text is hidden while typing */
+	white-space: nowrap; /* Prevents line breaks */
+	border-right: 3px solid; /* Creates a cursor effect */
+	animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: white;
+	} /* Change to the color of your text */
+}

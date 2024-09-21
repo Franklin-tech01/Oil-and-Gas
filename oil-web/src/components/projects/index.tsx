@@ -46,6 +46,7 @@ const Projects = () => {
             {/* Clients Section */}
             <div className='my-12'>
                 <p className='font-bold text-[24px] lg:text-[32px] mb-4'>Our Clients</p>
+                {/* <marquee > */}
                 <div className='grid grid-cols-1 lg:grid-cols-4 gap-6'>
                     {[
                         { name: 'Future OilField Service Limited', image: '/assets/images/1.jpg' },
@@ -59,6 +60,7 @@ const Projects = () => {
                         </div>
                     ))}
                 </div>
+                {/* </marquee> */}
             </div>
         </section>
     );

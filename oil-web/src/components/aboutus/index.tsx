@@ -3,15 +3,15 @@ import Button from '@/components/global/Button';
 
 const AboutUs = () => {
   return (
-    <section className='borde p-[40px] bg-[#cfbc0a] flex items-center flex-col '>
+    <section className='borde p-[40px] bg-[#906200] flex items-center flex-col '>
       {/* <div className='font-bold'>Trusted by 30,000 world-class brands and organizations of all sizes
       </div> */}
 
-      <div className=' p-[20px] flex flex-col lg:flex-row justify-between rounded'>
+      <div className=' p-[20px] flex flex-col lg:flex-row  justify-between rounded'>
         <div className='lg:w-[500px] mr-5'>
-          <p className='font-bold text-[30px]'>About <span className='text-blue-500'>Us</span></p>
+          <p className='font-bold text-[30px] text-white'>About Us</p>
           {/* <p>Providing affordable and reliable energy</p> */}
-          <p className='text-start'>Our company showcases
+          <p className='text-start text-white'>Our company showcases
             the comprehensive
             services we offer in the
             realm of strategic oil and
